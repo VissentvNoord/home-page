@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+:root{
+    --contact-background-color: blue;
+    --cover-image: url('img/cover-img.jpg');
+}
+
+header{
+    background-color: lightgrey;
+}
+
+.d-flex{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.section{
+    margin: 100px;
+}
+
+#about-me-canvas{
+    display: flex;
+    align-content: center;
+    justify-content: stretch center;
+    min-height: 100vh;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#about-me-canvas > main{
+    align-self: center;
+    max-width: 500px;
+    padding: 50px;
+
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.411);
+}
+
+h2{
+    font-size: 3rem;
+}
+
+p{
+    font-size: 1.2rem;
+}
+
+#cover-image{
+    display: grid;
+    background: var(--cover-image) no-repeat;
+    min-width: 200px;
+    min-height: 500px;
+    max-height: 800px;
+    background-size: cover;
+    background-position: center;
+
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.411);
+
+    color: white;
+    align-self: center;
+}
+
+#cover-text{
+    padding: 20px;
+    bottom: 0;
+    font-size: 5rem;
+    justify-self: center;
+    align-self: self-end;
+}
+
+#contact-canvas{
+    background-color: var(--contact-background-color);
+}
+
+#my-work-canvas{
+    margin-top: 0;
+}
+
+#project-table{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+
+    margin-top: 40px;
+    gap: 50px;
+}
+
+.project{
+    align-self: center;
+    justify-self: center;
+    flex-direction: column;
+    justify-content: stretch;
+    align-content: center;
+
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.342);
+
+    min-height: 400px;
+    width: 100%;
+}
+
+.project-image{
+    flex-grow: 2;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-info{
+    flex-grow: .5;
+    display: grid;
+    grid-template-columns: 1fr 20px 20px;
+}
+
+.icon-link{
+    width: 20px;
+    height: 20px;
+}
+
+#project-1{
+    background-color: red;
+}
+
+#contact-canvas{
+    justify-content:space-evenly;
+}
+
+#contact-img{
+    background: var(--cover-image) no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-width: 300px;
+    min-height: 200px;
+}
